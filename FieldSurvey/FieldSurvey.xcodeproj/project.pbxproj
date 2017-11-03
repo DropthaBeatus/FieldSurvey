@@ -13,6 +13,14 @@
 		6D410CD11FACD29C002140F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D410CCF1FACD29C002140F3 /* LaunchScreen.storyboard */; };
 		6D410CDC1FACD29C002140F3 /* FieldSurveyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D410CDB1FACD29C002140F3 /* FieldSurveyTests.swift */; };
 		6D410CE71FACD29C002140F3 /* FieldSurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D410CE61FACD29C002140F3 /* FieldSurveyUITests.swift */; };
+		6D410CF81FACD679002140F3 /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D410CF71FACD679002140F3 /* field_observations.json */; };
+		6D410CFA1FACD7D3002140F3 /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D410CF91FACD7D3002140F3 /* Classification.swift */; };
+		6D410CFC1FACDA3A002140F3 /* title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D410CFB1FACDA3A002140F3 /* title.swift */; };
+		6D410CFE1FACDCC9002140F3 /* Classification.JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D410CFD1FACDCC9002140F3 /* Classification.JSONParser.swift */; };
+		6D410D021FACE996002140F3 /* ClassificationJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D410D011FACE996002140F3 /* ClassificationJSONLoader.swift */; };
+		6D410D041FACEB87002140F3 /* ClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D410D031FACEB87002140F3 /* ClassificationViewController.swift */; };
+		6D410D061FACEBD2002140F3 /* ClassificationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D410D051FACEBD2002140F3 /* ClassificationDetailViewController.swift */; };
+		6D410D0A1FAD01AB002140F3 /* CheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D410D091FAD01AB002140F3 /* CheckTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,14 @@
 		6D410CE21FACD29C002140F3 /* FieldSurveyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FieldSurveyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D410CE61FACD29C002140F3 /* FieldSurveyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveyUITests.swift; sourceTree = "<group>"; };
 		6D410CE81FACD29C002140F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D410CF71FACD679002140F3 /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
+		6D410CF91FACD7D3002140F3 /* Classification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		6D410CFB1FACDA3A002140F3 /* title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = title.swift; sourceTree = "<group>"; };
+		6D410CFD1FACDCC9002140F3 /* Classification.JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classification.JSONParser.swift; sourceTree = "<group>"; };
+		6D410D011FACE996002140F3 /* ClassificationJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationJSONLoader.swift; sourceTree = "<group>"; };
+		6D410D031FACEB87002140F3 /* ClassificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationViewController.swift; sourceTree = "<group>"; };
+		6D410D051FACEBD2002140F3 /* ClassificationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationDetailViewController.swift; sourceTree = "<group>"; };
+		6D410D091FAD01AB002140F3 /* CheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +111,15 @@
 		6D410CC51FACD29C002140F3 /* FieldSurvey */ = {
 			isa = PBXGroup;
 			children = (
+				6D410CF41FACD540002140F3 /* Model */,
 				6D410CC61FACD29C002140F3 /* AppDelegate.swift */,
 				6D410CCA1FACD29C002140F3 /* Main.storyboard */,
 				6D410CCD1FACD29C002140F3 /* Assets.xcassets */,
 				6D410CCF1FACD29C002140F3 /* LaunchScreen.storyboard */,
 				6D410CD21FACD29C002140F3 /* Info.plist */,
+				6D410D031FACEB87002140F3 /* ClassificationViewController.swift */,
+				6D410D051FACEBD2002140F3 /* ClassificationDetailViewController.swift */,
+				6D410D091FAD01AB002140F3 /* CheckTableViewCell.swift */,
 			);
 			path = FieldSurvey;
 			sourceTree = "<group>";
@@ -120,6 +140,18 @@
 				6D410CE81FACD29C002140F3 /* Info.plist */,
 			);
 			path = FieldSurveyUITests;
+			sourceTree = "<group>";
+		};
+		6D410CF41FACD540002140F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D410CF71FACD679002140F3 /* field_observations.json */,
+				6D410CF91FACD7D3002140F3 /* Classification.swift */,
+				6D410CFB1FACDA3A002140F3 /* title.swift */,
+				6D410CFD1FACDCC9002140F3 /* Classification.JSONParser.swift */,
+				6D410D011FACE996002140F3 /* ClassificationJSONLoader.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D410CD11FACD29C002140F3 /* LaunchScreen.storyboard in Resources */,
+				6D410CF81FACD679002140F3 /* field_observations.json in Resources */,
 				6D410CCE1FACD29C002140F3 /* Assets.xcassets in Resources */,
 				6D410CCC1FACD29C002140F3 /* Main.storyboard in Resources */,
 			);
@@ -256,7 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D410CFC1FACDA3A002140F3 /* title.swift in Sources */,
 				6D410CC71FACD29C002140F3 /* AppDelegate.swift in Sources */,
+				6D410D041FACEB87002140F3 /* ClassificationViewController.swift in Sources */,
+				6D410CFA1FACD7D3002140F3 /* Classification.swift in Sources */,
+				6D410D0A1FAD01AB002140F3 /* CheckTableViewCell.swift in Sources */,
+				6D410D021FACE996002140F3 /* ClassificationJSONLoader.swift in Sources */,
+				6D410CFE1FACDCC9002140F3 /* Classification.JSONParser.swift in Sources */,
+				6D410D061FACEBD2002140F3 /* ClassificationDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
