@@ -29,6 +29,7 @@ class ClassificationViewController: UIViewController, UITableViewDelegate, UITab
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .medium
         
+        self.title = "Field Survey"
         // Do any additional setup after loading the view.
     }
   
